@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF7E537C2A313C91009AD8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E537B2A313C91009AD8FE /* AppDelegate.swift */; };
+		BF7E53882A313C94009AD8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7E53862A313C94009AD8FE /* LaunchScreen.storyboard */; };
+		BF7E53AF2A313D15009AD8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7E53902A313D15009AD8FE /* Main.storyboard */; };
+		BF7E53B02A313D15009AD8FE /* AddWaterMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53942A313D15009AD8FE /* AddWaterMarkViewController.swift */; };
+		BF7E53B12A313D15009AD8FE /* SelectVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53962A313D15009AD8FE /* SelectVideoViewController.swift */; };
+		BF7E53B22A313D15009AD8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7E53972A313D15009AD8FE /* Assets.xcassets */; };
+		BF7E53B32A313D15009AD8FE /* GraphicContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E539B2A313D15009AD8FE /* GraphicContext.swift */; };
+		BF7E53B42A313D15009AD8FE /* FilterProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E539C2A313D15009AD8FE /* FilterProcessor.swift */; };
+		BF7E53B52A313D15009AD8FE /* MediaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E539D2A313D15009AD8FE /* MediaFilter.swift */; };
+		BF7E53B62A313D15009AD8FE /* FilterShaderParamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E539F2A313D15009AD8FE /* FilterShaderParamManager.swift */; };
+		BF7E53B72A313D15009AD8FE /* ColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A02A313D15009AD8FE /* ColorFilter.swift */; };
+		BF7E53B82A313D15009AD8FE /* FilterShaderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A12A313D15009AD8FE /* FilterShaderProvider.swift */; };
+		BF7E53B92A313D16009AD8FE /* BlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A22A313D15009AD8FE /* BlurFilter.swift */; };
+		BF7E53BA2A313D16009AD8FE /* SobelFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A32A313D15009AD8FE /* SobelFilter.swift */; };
+		BF7E53BB2A313D16009AD8FE /* ThresholdFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A42A313D15009AD8FE /* ThresholdFilter.swift */; };
+		BF7E53BC2A313D16009AD8FE /* SepiaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A52A313D15009AD8FE /* SepiaFilter.swift */; };
+		BF7E53BD2A313D16009AD8FE /* MediaImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A72A313D15009AD8FE /* MediaImageProcessor.swift */; };
+		BF7E53BE2A313D16009AD8FE /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A82A313D15009AD8FE /* MediaItem.swift */; };
+		BF7E53BF2A313D16009AD8FE /* MediaProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53A92A313D15009AD8FE /* MediaProcessor.swift */; };
+		BF7E53C02A313D16009AD8FE /* MediaElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53AA2A313D15009AD8FE /* MediaElement.swift */; };
+		BF7E53C12A313D16009AD8FE /* MediaVideoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53AB2A313D15009AD8FE /* MediaVideoProcessor.swift */; };
+		BF7E53C22A313D16009AD8FE /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53AD2A313D15009AD8FE /* Assets.swift */; };
+		BF7E53C32A313D16009AD8FE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53AE2A313D15009AD8FE /* Images.swift */; };
+		BF7E53C92A313E03009AD8FE /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53C62A313E03009AD8FE /* Extension + UIViewController.swift */; };
+		BF7E53CA2A313E03009AD8FE /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53C72A313E03009AD8FE /* Extension + UIColor.swift */; };
+		BF7E53CB2A313E03009AD8FE /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E53C82A313E03009AD8FE /* Extension + UIView.swift */; };
+		BFB260632A675E81006A7526 /* OutputImageWaterMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB260622A675E81006A7526 /* OutputImageWaterMarkViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF7E53782A313C91009AD8FE /* Demo Watermark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Watermark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7E537B2A313C91009AD8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF7E53872A313C94009AD8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF7E53892A313C94009AD8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF7E53912A313D15009AD8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF7E53942A313D15009AD8FE /* AddWaterMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWaterMarkViewController.swift; sourceTree = "<group>"; };
+		BF7E53962A313D15009AD8FE /* SelectVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVideoViewController.swift; sourceTree = "<group>"; };
+		BF7E53972A313D15009AD8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF7E539B2A313D15009AD8FE /* GraphicContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicContext.swift; sourceTree = "<group>"; };
+		BF7E539C2A313D15009AD8FE /* FilterProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProcessor.swift; sourceTree = "<group>"; };
+		BF7E539D2A313D15009AD8FE /* MediaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaFilter.swift; sourceTree = "<group>"; };
+		BF7E539F2A313D15009AD8FE /* FilterShaderParamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterShaderParamManager.swift; sourceTree = "<group>"; };
+		BF7E53A02A313D15009AD8FE /* ColorFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilter.swift; sourceTree = "<group>"; };
+		BF7E53A12A313D15009AD8FE /* FilterShaderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterShaderProvider.swift; sourceTree = "<group>"; };
+		BF7E53A22A313D15009AD8FE /* BlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurFilter.swift; sourceTree = "<group>"; };
+		BF7E53A32A313D15009AD8FE /* SobelFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobelFilter.swift; sourceTree = "<group>"; };
+		BF7E53A42A313D15009AD8FE /* ThresholdFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThresholdFilter.swift; sourceTree = "<group>"; };
+		BF7E53A52A313D15009AD8FE /* SepiaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SepiaFilter.swift; sourceTree = "<group>"; };
+		BF7E53A72A313D15009AD8FE /* MediaImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaImageProcessor.swift; sourceTree = "<group>"; };
+		BF7E53A82A313D15009AD8FE /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		BF7E53A92A313D15009AD8FE /* MediaProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaProcessor.swift; sourceTree = "<group>"; };
+		BF7E53AA2A313D15009AD8FE /* MediaElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaElement.swift; sourceTree = "<group>"; };
+		BF7E53AB2A313D15009AD8FE /* MediaVideoProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVideoProcessor.swift; sourceTree = "<group>"; };
+		BF7E53AD2A313D15009AD8FE /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		BF7E53AE2A313D15009AD8FE /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		BF7E53C62A313E03009AD8FE /* Extension + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
+		BF7E53C72A313E03009AD8FE /* Extension + UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
+		BF7E53C82A313E03009AD8FE /* Extension + UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		BFB260622A675E81006A7526 /* OutputImageWaterMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputImageWaterMarkViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF7E53752A313C91009AD8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF7E536F2A313C91009AD8FE = {
+			isa = PBXGroup;
+			children = (
+				BF7E537A2A313C91009AD8FE /* Demo Watermark */,
+				BF7E53792A313C91009AD8FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF7E53792A313C91009AD8FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53782A313C91009AD8FE /* Demo Watermark.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF7E537A2A313C91009AD8FE /* Demo Watermark */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E537B2A313C91009AD8FE /* AppDelegate.swift */,
+				BF7E53982A313D15009AD8FE /* Sources */,
+				BF7E53C42A313E03009AD8FE /* Utitlities */,
+				BF7E53922A313D15009AD8FE /* Controller */,
+				BF7E538F2A313D15009AD8FE /* StroyBoard */,
+				BF7E53862A313C94009AD8FE /* LaunchScreen.storyboard */,
+				BF7E53972A313D15009AD8FE /* Assets.xcassets */,
+				BF7E53892A313C94009AD8FE /* Info.plist */,
+			);
+			path = "Demo Watermark";
+			sourceTree = "<group>";
+		};
+		BF7E538F2A313D15009AD8FE /* StroyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53902A313D15009AD8FE /* Main.storyboard */,
+			);
+			path = StroyBoard;
+			sourceTree = "<group>";
+		};
+		BF7E53922A313D15009AD8FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFB260612A675E62006A7526 /* OutputImageWaterMarkViewController */,
+				BF7E53932A313D15009AD8FE /* Select Position Water */,
+				BF7E53952A313D15009AD8FE /* Select Video */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF7E53932A313D15009AD8FE /* Select Position Water */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53942A313D15009AD8FE /* AddWaterMarkViewController.swift */,
+			);
+			path = "Select Position Water";
+			sourceTree = "<group>";
+		};
+		BF7E53952A313D15009AD8FE /* Select Video */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53962A313D15009AD8FE /* SelectVideoViewController.swift */,
+			);
+			path = "Select Video";
+			sourceTree = "<group>";
+		};
+		BF7E53982A313D15009AD8FE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53992A313D15009AD8FE /* Classes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BF7E53992A313D15009AD8FE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E539A2A313D15009AD8FE /* Filters */,
+				BF7E53A62A313D15009AD8FE /* Core */,
+				BF7E53AC2A313D15009AD8FE /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF7E539A2A313D15009AD8FE /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E539B2A313D15009AD8FE /* GraphicContext.swift */,
+				BF7E539C2A313D15009AD8FE /* FilterProcessor.swift */,
+				BF7E539D2A313D15009AD8FE /* MediaFilter.swift */,
+				BF7E539E2A313D15009AD8FE /* Effects */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		BF7E539E2A313D15009AD8FE /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E539F2A313D15009AD8FE /* FilterShaderParamManager.swift */,
+				BF7E53A02A313D15009AD8FE /* ColorFilter.swift */,
+				BF7E53A12A313D15009AD8FE /* FilterShaderProvider.swift */,
+				BF7E53A22A313D15009AD8FE /* BlurFilter.swift */,
+				BF7E53A32A313D15009AD8FE /* SobelFilter.swift */,
+				BF7E53A42A313D15009AD8FE /* ThresholdFilter.swift */,
+				BF7E53A52A313D15009AD8FE /* SepiaFilter.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		BF7E53A62A313D15009AD8FE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53A72A313D15009AD8FE /* MediaImageProcessor.swift */,
+				BF7E53A82A313D15009AD8FE /* MediaItem.swift */,
+				BF7E53A92A313D15009AD8FE /* MediaProcessor.swift */,
+				BF7E53AA2A313D15009AD8FE /* MediaElement.swift */,
+				BF7E53AB2A313D15009AD8FE /* MediaVideoProcessor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BF7E53AC2A313D15009AD8FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53AD2A313D15009AD8FE /* Assets.swift */,
+				BF7E53AE2A313D15009AD8FE /* Images.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF7E53C42A313E03009AD8FE /* Utitlities */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53C52A313E03009AD8FE /* Extension */,
+			);
+			path = Utitlities;
+			sourceTree = "<group>";
+		};
+		BF7E53C52A313E03009AD8FE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E53C62A313E03009AD8FE /* Extension + UIViewController.swift */,
+				BF7E53C72A313E03009AD8FE /* Extension + UIColor.swift */,
+				BF7E53C82A313E03009AD8FE /* Extension + UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BFB260612A675E62006A7526 /* OutputImageWaterMarkViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFB260622A675E81006A7526 /* OutputImageWaterMarkViewController.swift */,
+			);
+			path = OutputImageWaterMarkViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF7E53772A313C91009AD8FE /* Demo Watermark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF7E538C2A313C94009AD8FE /* Build configuration list for PBXNativeTarget "Demo Watermark" */;
+			buildPhases = (
+				BF7E53742A313C91009AD8FE /* Sources */,
+				BF7E53752A313C91009AD8FE /* Frameworks */,
+				BF7E53762A313C91009AD8FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo Watermark";
+			productName = "Demo Watermark";
+			productReference = BF7E53782A313C91009AD8FE /* Demo Watermark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF7E53702A313C91009AD8FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BF7E53772A313C91009AD8FE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BF7E53732A313C91009AD8FE /* Build configuration list for PBXProject "Demo Watermark" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF7E536F2A313C91009AD8FE;
+			productRefGroup = BF7E53792A313C91009AD8FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF7E53772A313C91009AD8FE /* Demo Watermark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF7E53762A313C91009AD8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E53882A313C94009AD8FE /* LaunchScreen.storyboard in Resources */,
+				BF7E53B22A313D15009AD8FE /* Assets.xcassets in Resources */,
+				BF7E53AF2A313D15009AD8FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF7E53742A313C91009AD8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E53B02A313D15009AD8FE /* AddWaterMarkViewController.swift in Sources */,
+				BF7E53C12A313D16009AD8FE /* MediaVideoProcessor.swift in Sources */,
+				BF7E53C22A313D16009AD8FE /* Assets.swift in Sources */,
+				BF7E53B72A313D15009AD8FE /* ColorFilter.swift in Sources */,
+				BFB260632A675E81006A7526 /* OutputImageWaterMarkViewController.swift in Sources */,
+				BF7E53BE2A313D16009AD8FE /* MediaItem.swift in Sources */,
+				BF7E53BC2A313D16009AD8FE /* SepiaFilter.swift in Sources */,
+				BF7E537C2A313C91009AD8FE /* AppDelegate.swift in Sources */,
+				BF7E53CA2A313E03009AD8FE /* Extension + UIColor.swift in Sources */,
+				BF7E53CB2A313E03009AD8FE /* Extension + UIView.swift in Sources */,
+				BF7E53BB2A313D16009AD8FE /* ThresholdFilter.swift in Sources */,
+				BF7E53B62A313D15009AD8FE /* FilterShaderParamManager.swift in Sources */,
+				BF7E53BA2A313D16009AD8FE /* SobelFilter.swift in Sources */,
+				BF7E53C02A313D16009AD8FE /* MediaElement.swift in Sources */,
+				BF7E53B42A313D15009AD8FE /* FilterProcessor.swift in Sources */,
+				BF7E53B32A313D15009AD8FE /* GraphicContext.swift in Sources */,
+				BF7E53B52A313D15009AD8FE /* MediaFilter.swift in Sources */,
+				BF7E53B82A313D15009AD8FE /* FilterShaderProvider.swift in Sources */,
+				BF7E53C92A313E03009AD8FE /* Extension + UIViewController.swift in Sources */,
+				BF7E53BD2A313D16009AD8FE /* MediaImageProcessor.swift in Sources */,
+				BF7E53B92A313D16009AD8FE /* BlurFilter.swift in Sources */,
+				BF7E53C32A313D16009AD8FE /* Images.swift in Sources */,
+				BF7E53B12A313D15009AD8FE /* SelectVideoViewController.swift in Sources */,
+				BF7E53BF2A313D16009AD8FE /* MediaProcessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF7E53862A313C94009AD8FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF7E53872A313C94009AD8FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF7E53902A313D15009AD8FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF7E53912A313D15009AD8FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF7E538A2A313C94009AD8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF7E538B2A313C94009AD8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF7E538D2A313C94009AD8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6F9LF2XGBG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo Watermark/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = Allow;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Allow;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = Allow;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Demo-Watermark.Demo-Watermark";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF7E538E2A313C94009AD8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6F9LF2XGBG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo Watermark/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = Allow;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Allow;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = Allow;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Demo-Watermark.Demo-Watermark";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF7E53732A313C91009AD8FE /* Build configuration list for PBXProject "Demo Watermark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7E538A2A313C94009AD8FE /* Debug */,
+				BF7E538B2A313C94009AD8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7E538C2A313C94009AD8FE /* Build configuration list for PBXNativeTarget "Demo Watermark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7E538D2A313C94009AD8FE /* Debug */,
+				BF7E538E2A313C94009AD8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF7E53702A313C91009AD8FE /* Project object */;
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Video View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SelectVideoViewController" id="BYZ-38-t0r" customClass="SelectVideoViewController" customModule="Demo_Watermark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="agI-pL-ye6">
+                                <rect key="frame" x="27.666666666666657" y="343.66666666666669" width="338" height="164.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Video &amp; Image To Add Water Mark" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-bz-Kmq">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocr-Il-IU7">
+                                        <rect key="frame" x="0.0" y="44.666666666666629" width="338" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.054901960780000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="42B-HR-gXO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Attach Image ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq4-Ml-eFT">
+                                        <rect key="frame" x="0.0" y="114.66666666666663" width="338" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.054901960780000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CFI-EC-y46"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Attach Video ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="agI-pL-ye6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="66Q-Fv-pEz"/>
+                            <constraint firstItem="agI-pL-ye6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Znc-qD-cSj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAttachImage" destination="ocr-Il-IU7" id="cF6-Js-gPE"/>
+                        <outlet property="buttonAttachVideo" destination="Pq4-Ml-eFT" id="VEV-gi-Dlq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+        <!--Add Water Mark View Controller-->
+        <scene sceneID="esw-sP-bp6">
+            <objects>
+                <viewController storyboardIdentifier="AddWaterMarkViewController" id="Eyj-vU-rhZ" customClass="AddWaterMarkViewController" customModule="Demo_Watermark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uVt-33-XJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-lf-y2F">
+                                <rect key="frame" x="20" y="98.999999999999986" width="353" height="174.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Mark Position?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEQ-Dx-lhY">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03c-4n-Scb">
+                                        <rect key="frame" x="0.0" y="49.666666666666657" width="353" height="50"/>
+                                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xYv-k4-oDp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Top- Center">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-Ch-2rb">
+                                        <rect key="frame" x="0.0" y="124.66666666666666" width="353" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IuL-Sy-bIU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Bottom Center">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5K-tU-iuS">
+                                <rect key="frame" x="20" y="748" width="353" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.054901960780000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jcF-4B-e4I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-Fx-S8Y">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l5K-Fk-XnD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7vo-Fx-S8Y" firstAttribute="top" secondItem="l5K-Fk-XnD" secondAttribute="top" id="4pN-WQ-QFq"/>
+                            <constraint firstItem="hJ8-lf-y2F" firstAttribute="top" secondItem="l5K-Fk-XnD" secondAttribute="top" constant="40" id="5N0-gX-Eld"/>
+                            <constraint firstItem="l5K-Fk-XnD" firstAttribute="trailing" secondItem="hJ8-lf-y2F" secondAttribute="trailing" constant="20" id="79c-UP-0ot"/>
+                            <constraint firstItem="7vo-Fx-S8Y" firstAttribute="trailing" secondItem="l5K-Fk-XnD" secondAttribute="trailing" id="L6n-pY-WQE"/>
+                            <constraint firstItem="l5K-Fk-XnD" firstAttribute="trailing" secondItem="n5K-tU-iuS" secondAttribute="trailing" constant="20" id="doN-lC-iVJ"/>
+                            <constraint firstItem="hJ8-lf-y2F" firstAttribute="leading" secondItem="l5K-Fk-XnD" secondAttribute="leading" constant="20" id="fjY-FC-2r6"/>
+                            <constraint firstItem="l5K-Fk-XnD" firstAttribute="bottom" secondItem="n5K-tU-iuS" secondAttribute="bottom" constant="20" id="l2x-Nf-xYP"/>
+                            <constraint firstAttribute="bottom" secondItem="7vo-Fx-S8Y" secondAttribute="bottom" id="sZn-IT-t5E"/>
+                            <constraint firstItem="7vo-Fx-S8Y" firstAttribute="leading" secondItem="l5K-Fk-XnD" secondAttribute="leading" id="t8d-0N-HDh"/>
+                            <constraint firstItem="n5K-tU-iuS" firstAttribute="leading" secondItem="l5K-Fk-XnD" secondAttribute="leading" constant="20" id="u4C-gm-mTo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7vo-Fx-S8Y" id="zcx-Nn-LYr"/>
+                        <outlet property="buttonBottomCenter" destination="4Dp-Ch-2rb" id="w8A-Kp-Tmt"/>
+                        <outlet property="buttonConfirm" destination="n5K-tU-iuS" id="YoJ-8t-rFd"/>
+                        <outlet property="buttonTopCenter" destination="03c-4n-Scb" id="Xet-Pn-KaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgN-hz-hdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727.48091603053433" y="-2.1126760563380285"/>
+        </scene>
+        <!--Output Image Water Mark View Controller-->
+        <scene sceneID="CyG-KF-GHb">
+            <objects>
+                <viewController storyboardIdentifier="OutputImageWaterMarkViewController" id="SPe-ri-iE6" customClass="OutputImageWaterMarkViewController" customModule="Demo_Watermark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hU6-sk-xZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HoJ-kw-nAc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CDk-It-kq0"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CDk-It-kq0" firstAttribute="trailing" secondItem="HoJ-kw-nAc" secondAttribute="trailing" id="Apb-Y4-UM9"/>
+                            <constraint firstItem="CDk-It-kq0" firstAttribute="bottom" secondItem="HoJ-kw-nAc" secondAttribute="bottom" id="Dvw-2G-hQq"/>
+                            <constraint firstItem="HoJ-kw-nAc" firstAttribute="leading" secondItem="CDk-It-kq0" secondAttribute="leading" id="HFt-jW-apc"/>
+                            <constraint firstItem="HoJ-kw-nAc" firstAttribute="top" secondItem="CDk-It-kq0" secondAttribute="top" id="ZWC-kX-jui"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HoJ-kw-nAc" id="aA5-AC-1yF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLR-PE-xPW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1475" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
